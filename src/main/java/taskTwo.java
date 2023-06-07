@@ -1,9 +1,8 @@
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class taskTwo {
-    private static int[][] fillingMatrix(){
+    private static int[][] fillingMatrix() {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         System.out.print("Введите количество строк: ");
@@ -22,8 +21,18 @@ public class taskTwo {
         return someMatrix;
 
     }
+
+    public static void printMatrix(int [][] someMatrix){
+        for (int[] row : someMatrix) {
+            for (int columns : row) {
+                System.out.print(columns + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         int[][] matrix = fillingMatrix();
-        System.out.println(Arrays.deepToString(matrix));
+        printMatrix(matrix);
     }
 }
