@@ -18,11 +18,12 @@ public class taskOne {
         int[] array = fillingArray();
         int min = array[0];
         int max = array[0];
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > max) {
-                max = array[i];
-            } else if (array[i] < min) {
-                min = array[i];
+
+        for (int i : array) {
+            if (i > max) {
+                max = i;
+            } else if (i < min) {
+                min = i;
             }
         }
         System.out.println("min = " + min);
