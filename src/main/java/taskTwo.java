@@ -1,14 +1,10 @@
 import java.util.Random;
-import java.util.Scanner;
 
 public class taskTwo {
     private static int[][] fillingMatrix() {
-        Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        System.out.print("Введите количество строк: ");
-        int row = scanner.nextInt();
-        System.out.print("Введите количество столбцов: ");
-        int columns = scanner.nextInt();
+        int row = taskOne.requestEnterInformation("Введите количество строк:");
+        int columns = taskOne.requestEnterInformation("Введите количество столбцов:");
         int[][] someMatrix = new int[row][columns];
 
         for (int i = 0; i < row; i++) {
@@ -19,9 +15,7 @@ public class taskTwo {
             }
         }
         return someMatrix;
-
     }
-
     public static void printMatrix(int [][] someMatrix){
         for (int[] row : someMatrix) {
             for (int columns : row) {
