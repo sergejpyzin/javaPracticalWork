@@ -1,13 +1,29 @@
-import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
+import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
-//        System.out.println(java.time.ZonedDateTime.now());
-//        System.out.println(java.time.LocalDateTime.now());
-        LocalDateTime date = LocalDateTime.now();
-        ZonedDateTime zoneDate = ZonedDateTime.now();
-        System.out.println(zoneDate);
+        Scanner sc = new Scanner(System.in);
+        int i;
+        while (true) {
+            System.out.print("message");
+            try {
+                i = Integer.parseInt(sc.next());
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Неверный ввод!");
+            }
+        }
+
+//        Scanner scanner = new Scanner(System.in);
+//        boolean checking = scanner.hasNext();
+//        String s = "";
+//        while (checking) {
+//            s = scanner.next();
+//            checking = false;
+//
+//        }
+//        scanner.close();
+//        System.out.println(s);
 
     }
 }

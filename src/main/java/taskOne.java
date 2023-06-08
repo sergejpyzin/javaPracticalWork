@@ -2,14 +2,25 @@ import java.util.Scanner;
 
 public class taskOne {
     //    1. Задать одномерный массив и найти в нем минимальный и максимальный элементы ;
-    public static int[] fillingArray() {
+    public static int requestEnterInformation (String userMessage){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите количество элементов массива: ");
-        int quantityElement = scanner.nextInt();
+        int number;
+        while (true) {
+            System.out.println(userMessage);
+            try {
+                number = Integer.parseInt(scanner.next());
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка ввода! Попробуйте еще раз.");
+            }
+        }
+        return number;
+    }
+    public static int[] fillingArray() {
+        int quantityElement = requestEnterInformation("Введите количество элементов массива: ");
         int[] someArray = new int[quantityElement];
         for (int i = 0; i < someArray.length; i++) {
-            System.out.print("Введите елемент массива: ");
-            someArray[i] = scanner.nextInt();
+            someArray[i] = requestEnterInformation("Введите элемент массива: ");
         }
         return someArray;
     }
@@ -26,7 +37,7 @@ public class taskOne {
                 min = i;
             }
         }
-        System.out.println("min = " + min);
-        System.out.println("max = " + max);
+        System.out.println("Минимальный элемент массива " + min);
+        System.out.println("Максимальный элемент массива " + max);
     }
 }
