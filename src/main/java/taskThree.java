@@ -7,12 +7,13 @@ public class taskThree {
 //            "Добрый день, <Имя>!", если время от 12:00 до 17:59;
 //"Добрый вечер, <Имя>!", если время от 18:00 до 22:59;
 //"Доброй ночи, <Имя>!", если время от 23:00 до 4:59
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        LocalTime morningTime = LocalTime.of(11, 59);
-        LocalTime dayTime = LocalTime.of(17, 59);
-        LocalTime eveningTime = LocalTime.of(22, 59);
-        LocalTime nightTime = LocalTime.of(4, 59);
+        LocalTime morningTime = LocalTime.of(11, 59, 59);
+        LocalTime dayTime = LocalTime.of(17, 59, 59);
+        LocalTime eveningTime = LocalTime.of(22, 59, 59);
+        LocalTime nightTime = LocalTime.of(4, 59, 59);
         LocalTime localTime = LocalTime.now();
 
         System.out.println("Введите имя пользователя:");

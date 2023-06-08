@@ -30,8 +30,9 @@ public class taskFour {
     }
 
     public static void main(String[] args) {
-        int[] array =  new int[] {1, 2, 3, 5, 6, 7};
-        int n = -6;
+        int[] array =  taskOne.fillingArray();
+        int n = taskOne.requestEnterInformation("Введите значение сдвига: ");
+        System.out.println(Arrays.toString(array));
         shiftingArrayElement(array, n);
         System.out.println(Arrays.toString(array));
     }
