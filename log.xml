@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-06-11T16:54:29.042277100Z</date>
+  <millis>1686502469042</millis>
+  <nanos>277100</nanos>
+  <sequence>0</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+<record>
+  <date>2023-06-11T16:54:29.073684400Z</date>
+  <millis>1686502469073</millis>
+  <nanos>684400</nanos>
+  <sequence>1</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+<record>
+  <date>2023-06-11T16:54:29.074682900Z</date>
+  <millis>1686502469074</millis>
+  <nanos>682900</nanos>
+  <sequence>2</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+<record>
+  <date>2023-06-11T16:54:29.075680400Z</date>
+  <millis>1686502469075</millis>
+  <nanos>680400</nanos>
+  <sequence>3</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+<record>
+  <date>2023-06-11T16:54:29.075680400Z</date>
+  <millis>1686502469075</millis>
+  <nanos>680400</nanos>
+  <sequence>4</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+<record>
+  <date>2023-06-11T16:54:29.075680400Z</date>
+  <millis>1686502469075</millis>
+  <nanos>680400</nanos>
+  <sequence>5</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+<record>
+  <date>2023-06-11T16:54:29.076681600Z</date>
+  <millis>1686502469076</millis>
+  <nanos>681600</nanos>
+  <sequence>6</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+<record>
+  <date>2023-06-11T16:54:29.076681600Z</date>
+  <millis>1686502469076</millis>
+  <nanos>681600</nanos>
+  <sequence>7</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+<record>
+  <date>2023-06-11T16:54:29.076681600Z</date>
+  <millis>1686502469076</millis>
+  <nanos>681600</nanos>
+  <sequence>8</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+<record>
+  <date>2023-06-11T16:54:29.077679900Z</date>
+  <millis>1686502469077</millis>
+  <nanos>679900</nanos>
+  <sequence>9</sequence>
+  <logger>testLogger</logger>
+  <level>INFO</level>
+  <class>testLogger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Замена выполнена успешно</message>
+</record>
+</log>
