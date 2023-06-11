@@ -1,3 +1,5 @@
+package PracticalTaskLessonOne;
+
 import java.util.Arrays;
 
 public class taskFour {

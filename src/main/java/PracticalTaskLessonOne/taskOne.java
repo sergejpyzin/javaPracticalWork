@@ -1,3 +1,5 @@
+package PracticalTaskLessonOne;
+
 import java.util.Scanner;
 
 public class taskOne {
