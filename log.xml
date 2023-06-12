@@ -2,123 +2,147 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-06-11T16:54:29.042277100Z</date>
-  <millis>1686502469042</millis>
-  <nanos>277100</nanos>
+  <date>2023-06-12T17:05:12.203396500Z</date>
+  <millis>1686589512203</millis>
+  <nanos>396500</nanos>
   <sequence>0</sequence>
-  <logger>testLogger</logger>
+  <logger>test</logger>
   <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Пользователем введено первое значение</message>
 </record>
 <record>
-  <date>2023-06-11T16:54:29.073684400Z</date>
-  <millis>1686502469073</millis>
-  <nanos>684400</nanos>
+  <date>2023-06-12T17:05:13.318013600Z</date>
+  <millis>1686589513318</millis>
+  <nanos>13600</nanos>
   <sequence>1</sequence>
-  <logger>testLogger</logger>
+  <logger>test</logger>
   <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Пользователем выбрано действие</message>
 </record>
 <record>
-  <date>2023-06-11T16:54:29.074682900Z</date>
-  <millis>1686502469074</millis>
-  <nanos>682900</nanos>
+  <date>2023-06-12T17:05:13.813550Z</date>
+  <millis>1686589513813</millis>
+  <nanos>550000</nanos>
   <sequence>2</sequence>
-  <logger>testLogger</logger>
+  <logger>test</logger>
   <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Пользователем введено второе значение</message>
 </record>
 <record>
-  <date>2023-06-11T16:54:29.075680400Z</date>
-  <millis>1686502469075</millis>
-  <nanos>680400</nanos>
+  <date>2023-06-12T17:05:13.814553200Z</date>
+  <millis>1686589513814</millis>
+  <nanos>553200</nanos>
   <sequence>3</sequence>
-  <logger>testLogger</logger>
-  <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <logger>test</logger>
+  <level>WARNING</level>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Деление на ноль</message>
 </record>
 <record>
-  <date>2023-06-11T16:54:29.075680400Z</date>
-  <millis>1686502469075</millis>
-  <nanos>680400</nanos>
+  <date>2023-06-12T17:05:19.942821800Z</date>
+  <millis>1686589519942</millis>
+  <nanos>821800</nanos>
   <sequence>4</sequence>
-  <logger>testLogger</logger>
+  <logger>test</logger>
   <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Пользователем введено первое значение</message>
 </record>
 <record>
-  <date>2023-06-11T16:54:29.075680400Z</date>
-  <millis>1686502469075</millis>
-  <nanos>680400</nanos>
+  <date>2023-06-12T17:05:23.091962500Z</date>
+  <millis>1686589523091</millis>
+  <nanos>962500</nanos>
   <sequence>5</sequence>
-  <logger>testLogger</logger>
+  <logger>test</logger>
   <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Пользователем выбрано действие</message>
 </record>
 <record>
-  <date>2023-06-11T16:54:29.076681600Z</date>
-  <millis>1686502469076</millis>
-  <nanos>681600</nanos>
+  <date>2023-06-12T17:05:26.885878200Z</date>
+  <millis>1686589526885</millis>
+  <nanos>878200</nanos>
   <sequence>6</sequence>
-  <logger>testLogger</logger>
+  <logger>test</logger>
   <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Пользователем введено второе значение</message>
 </record>
 <record>
-  <date>2023-06-11T16:54:29.076681600Z</date>
-  <millis>1686502469076</millis>
-  <nanos>681600</nanos>
+  <date>2023-06-12T17:05:26.885878200Z</date>
+  <millis>1686589526885</millis>
+  <nanos>878200</nanos>
   <sequence>7</sequence>
-  <logger>testLogger</logger>
-  <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <logger>test</logger>
+  <level>WARNING</level>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Неверный операнд</message>
 </record>
 <record>
-  <date>2023-06-11T16:54:29.076681600Z</date>
-  <millis>1686502469076</millis>
-  <nanos>681600</nanos>
+  <date>2023-06-12T17:05:29.659658800Z</date>
+  <millis>1686589529659</millis>
+  <nanos>658800</nanos>
   <sequence>8</sequence>
-  <logger>testLogger</logger>
+  <logger>test</logger>
   <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Пользователем введено первое значение</message>
 </record>
 <record>
-  <date>2023-06-11T16:54:29.077679900Z</date>
-  <millis>1686502469077</millis>
-  <nanos>679900</nanos>
+  <date>2023-06-12T17:05:31.871510100Z</date>
+  <millis>1686589531871</millis>
+  <nanos>510100</nanos>
   <sequence>9</sequence>
-  <logger>testLogger</logger>
+  <logger>test</logger>
   <level>INFO</level>
-  <class>testLogger</class>
-  <method>main</method>
+  <class>test</class>
+  <method>getCalculate</method>
   <thread>1</thread>
-  <message>Замена выполнена успешно</message>
+  <message>Пользователем выбрано действие</message>
+</record>
+<record>
+  <date>2023-06-12T17:05:33.496280800Z</date>
+  <millis>1686589533496</millis>
+  <nanos>280800</nanos>
+  <sequence>10</sequence>
+  <logger>test</logger>
+  <level>INFO</level>
+  <class>test</class>
+  <method>getCalculate</method>
+  <thread>1</thread>
+  <message>Пользователем введено второе значение</message>
+</record>
+<record>
+  <date>2023-06-12T17:05:33.497269300Z</date>
+  <millis>1686589533497</millis>
+  <nanos>269300</nanos>
+  <sequence>11</sequence>
+  <logger>test</logger>
+  <level>INFO</level>
+  <class>test</class>
+  <method>getCalculate</method>
+  <thread>1</thread>
+  <message>Выполнено деление</message>
 </record>
 </log>
