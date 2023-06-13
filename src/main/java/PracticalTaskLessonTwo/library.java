@@ -52,21 +52,17 @@ public class library {
     }
 
     public static String[] readFile(String fileName) throws Exception {
-//        FileReader readerFile = new FileReader(file);
         BufferedReader readerBuffer = new BufferedReader(new FileReader(fileName));
         int sizeArray = 0;
+        int iteration = 0;
         while ((readerBuffer.readLine()) != null) sizeArray += 1;
         readerBuffer.close();
-
         String[] stringsArray = new String[sizeArray];
-
-        int i = 0;
-//        FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
         String string;
         while ((string = bufferedReader.readLine()) != null) {
-            stringsArray[i] = string;
-            i += 1;
+            stringsArray[iteration] = string;
+            iteration += 1;
         }
         bufferedReader.close();
         return stringsArray;
