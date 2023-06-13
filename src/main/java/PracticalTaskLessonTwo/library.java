@@ -1,5 +1,7 @@
 package PracticalTaskLessonTwo;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -16,6 +18,13 @@ public class library {
 
     public static void printArray(int[] array) {
         for (int j : array) {
+            System.out.print(j + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printStringArray(String[] array){
+        for (String j : array) {
             System.out.print(j + " ");
         }
         System.out.println();
@@ -40,5 +49,26 @@ public class library {
         Scanner scanner = new Scanner(System.in);
         System.out.println(massage);
         return scanner.next().charAt(0);
+    }
+
+    public static String[] readFile(String fileName) throws Exception {
+//        FileReader readerFile = new FileReader(file);
+        BufferedReader readerBuffer = new BufferedReader(new FileReader(fileName));
+        int sizeArray = 0;
+        while ((readerBuffer.readLine()) != null) sizeArray += 1;
+        readerBuffer.close();
+
+        String[] stringsArray = new String[sizeArray];
+
+        int i = 0;
+//        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
+        String string;
+        while ((string = bufferedReader.readLine()) != null) {
+            stringsArray[i] = string;
+            i += 1;
+        }
+        bufferedReader.close();
+        return stringsArray;
     }
 }
