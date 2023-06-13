@@ -6,14 +6,6 @@ import java.util.logging.*;
 
 //Реализуйте алгоритм сортировки пузырьком числового массива, результат после каждой итерации запишите в лог-файл.
 public class taskTwo {
-    public static int[] fillingRandomArray(int volume){
-        Random random = new Random();
-        int[] array = new int[volume];
-        for (int i = 0; i < volume; i++) {
-            array[i] = random.nextInt(0, 100);
-        }
-        return array;
-    }
 
     public static void main(String[] args) throws Exception {
         Logger LOGGER = Logger.getLogger(taskTwo.class.getName());
@@ -23,8 +15,8 @@ public class taskTwo {
         SimpleFormatter sf = new SimpleFormatter();
         fh.setFormatter(sf);
 
-        int[] array = fillingRandomArray(50);
-        System.out.println(Arrays.toString(array));
+        int[] array = library.fillingRandomArray(6);
+        library.printArray(array);
         boolean sort;
         int i = 0;
         do {
@@ -41,6 +33,6 @@ public class taskTwo {
             }
             i++;
         } while (sort);
-        System.out.println(Arrays.toString(array));
+        library.printArray(array);
     }
 }

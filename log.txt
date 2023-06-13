@@ -1,0 +1,16 @@
+июн. 13, 2023 9:33:40 AM PracticalTaskLessonTwo.taskTwo main
+INFO: Поиск выполнен
+июн. 13, 2023 9:33:40 AM PracticalTaskLessonTwo.taskTwo main
+INFO: Замена выполнена успешно
+июн. 13, 2023 9:33:40 AM PracticalTaskLessonTwo.taskTwo main
+INFO: Поиск выполнен
+июн. 13, 2023 9:33:40 AM PracticalTaskLessonTwo.taskTwo main
+INFO: Замена выполнена успешно
+июн. 13, 2023 9:33:40 AM PracticalTaskLessonTwo.taskTwo main
+INFO: Поиск выполнен
+июн. 13, 2023 9:33:40 AM PracticalTaskLessonTwo.taskTwo main
+INFO: Замена выполнена успешно
+июн. 13, 2023 9:33:40 AM PracticalTaskLessonTwo.taskTwo main
+INFO: Поиск выполнен
+июн. 13, 2023 9:33:40 AM PracticalTaskLessonTwo.taskTwo main
+INFO: Замена выполнена успешно
