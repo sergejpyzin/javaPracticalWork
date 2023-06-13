@@ -35,6 +35,7 @@ public class library {
         }
         return number;
     }
+
     public static char requestEnterOperation(String massage) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(massage);
