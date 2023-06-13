@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class library {
 
-    public static int[] fillingRandomArray(int volume){
+    public static int[] fillingRandomArray(int volume) {
         Random random = new Random();
         int[] array = new int[volume];
         for (int i = 0; i < volume; i++) {
@@ -14,7 +14,7 @@ public class library {
         return array;
     }
 
-    public static void printArray(int[]array){
+    public static void printArray(int[] array) {
         for (int j : array) {
             System.out.print(j + " ");
         }

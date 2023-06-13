@@ -1,7 +1,5 @@
 package PracticalTaskLessonTwo;
 
-import java.util.Arrays;
-import java.util.Random;
 import java.util.logging.*;
 
 //Реализуйте алгоритм сортировки пузырьком числового массива, результат после каждой итерации запишите в лог-файл.
