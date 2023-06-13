@@ -17,9 +17,9 @@ public class taskOne {
     }
 
     public static void main(String[] args) throws Exception {
-        String[] someStringArray = library.readFile("E:\\GeekBranch\\JavaLessons\\PracticalWork\\src\\main\\java\\PracticalTaskLessonTwo\\String.txt");
-        System.out.println(someStringArray[0]);
-        StringBuilder resultSelect = builderString(someStringArray[0]);
+        String someStringArray = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"}";
+        System.out.println(someStringArray);
+        StringBuilder resultSelect = builderString(someStringArray);
         System.out.println(resultSelect);
 
     }
