@@ -55,7 +55,9 @@ public class library {
         BufferedReader readerBuffer = new BufferedReader(new FileReader(fileName));
         int sizeArray = 0;
         int iteration = 0;
-        while ((readerBuffer.readLine()) != null) sizeArray += 1;
+        while ((readerBuffer.readLine()) != null) {
+            sizeArray += 1;
+        }
         readerBuffer.close();
         String[] stringsArray = new String[sizeArray];
         BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));

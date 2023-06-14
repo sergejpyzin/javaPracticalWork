@@ -17,6 +17,8 @@ public class taskThird {
 
     public static void main(String[] args) throws Exception {
         String[] string = library.readFile("JSONTest.json");
-        for (String s : string) System.out.println(builderString(s));
+        for (String s : string) {
+            System.out.println(builderString(s));
+        }
     }
 }
