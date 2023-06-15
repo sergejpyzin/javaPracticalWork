@@ -30,13 +30,28 @@ public class library {
         System.out.println();
     }
 
-    public static double requestEnterNumber(String massage) {
+    public static double requestDoubleEnterNumber(String massage) {
         Scanner scanner = new Scanner(System.in);
         double number;
         while (true) {
             try {
                 System.out.println(massage);
                 number = Double.parseDouble(scanner.next());
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка ввода! Попробуйте еще раз.");
+            }
+        }
+        return number;
+    }
+
+    public static int requestIntegerEnterNumber(String massage) {
+        Scanner scanner = new Scanner(System.in);
+        int number;
+        while (true) {
+            try {
+                System.out.println(massage);
+                number = Integer.parseInt(scanner.next());
                 break;
             } catch (NumberFormatException e) {
                 System.out.println("Ошибка ввода! Попробуйте еще раз.");
