@@ -1,4 +1,4 @@
 package PracticalTaskLessonsFour;
 
-public class task {
+public class task_variantTwo {
 }
