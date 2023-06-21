@@ -1,6 +1,7 @@
 package PracticalTaskLessonsFour;
 
 import java.util.LinkedList;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class task_variantOne {
@@ -42,7 +43,12 @@ public class task_variantOne {
             if (massage.equalsIgnoreCase("print")) {
                 System.out.println(linkedList);
             } else if (massage.equalsIgnoreCase("revert")) {
-                linkedList.removeFirst();
+                try{
+                    linkedList.removeFirst();
+                } catch (NoSuchElementException e){
+                    System.err.println("Не найдено ни одного элемента " + e.getMessage());
+
+                }
             } else {
                 linkedList.addFirst(massage);
             }
