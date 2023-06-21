@@ -1,46 +1,53 @@
-import java.util.*;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Scanner;
 
 public class test {
-    public static void removeEvenElements(List<Integer> someList){
-        int index = 0;
-        while (index < someList.size()){
-            if (someList.get(index) % 2 == 0){
-                someList.remove(index);
-            } else {
-                index++;
-            }
-        }
-    }
+    /*
+    Реализовать консольное приложение, которое:
+1. Принимает от пользователя и “запоминает” строки.
+2. Если введено print, выводит строки так, чтобы последняя введенная была первой в списке, а первая - последней.
+3. Если введено revert, удаляет предыдущую введенную строку из памяти.
+4. Если введено exit, то программа завершается
 
-    public static double averageValue(List<Integer> someList){
-        double sum = 0;
-        for (Integer integer : someList) {
-            sum += integer;
-        }
-        System.out.println(sum);
-        System.out.println(someList.size());
-        return sum / someList.size();
-    }
+> - ввод в консоль (stdin), < - вывод на консоль (stdout)
+> java
+> python
+> c#
+> print
+< [c#, python, java]
+> revert
+> print
+< [python, java]
+> revert
+> revert
+> print
+< []
+> revert -> throw new NoSuchElementException
+     */
 
     public static void main(String[] args) {
-        Random random = new Random();
+        LinkedList<String> linkedList = new LinkedList<>();
+        Scanner scanner = new Scanner(System.in);
+        String massage;
+        System.out.println("""
+                Команды для взаимодействия:
+                1. print - показать ранее введенные строки;
+                2. revert - удалить последнюю введенную строку;
+                3. exit - выйти из программы.""");
 
-        List<Integer> someList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            someList.add(random.nextInt(10));
-        }
-
-
-        IntSummaryStatistics stats = someList.stream().collect(Collectors.summarizingInt(Integer::intValue));
-        System.out.println(someList);
-        System.out.println(averageValue(someList));
-        System.out.println(someList.stream().max(Comparator.naturalOrder()).get());
-        System.out.println(someList.stream().min(Comparator.naturalOrder()).get());
-        removeEvenElements(someList);
-        System.out.println(someList);
-
+        do {
+            System.out.println("Введите строку:");
+            massage = scanner.next();
+            if (massage.equalsIgnoreCase("print")) {
+                System.out.println(linkedList);
+            } else if (massage.equalsIgnoreCase("revert")) {
+                linkedList.removeFirst();
+            } else {
+                linkedList.addFirst(massage);
+            }
+        } while (!massage.equalsIgnoreCase("exit"));
 
 
     }
