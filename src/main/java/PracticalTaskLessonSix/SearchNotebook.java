@@ -2,6 +2,7 @@ package PracticalTaskLessonSix;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SearchNotebook {
     private String brand;
@@ -13,14 +14,17 @@ public class SearchNotebook {
         this.brand = brand;
         return this;
     }
+
     public SearchNotebook setColor(String color) {
         this.color = color;
         return this;
     }
+
     public SearchNotebook setMinRandomAccessMemory(Integer minRandomAccessMemory) {
         this.minRandomAccessMemory = minRandomAccessMemory;
         return this;
     }
+
     public SearchNotebook setMaxRandomAccessMemory(Integer maxRandomAccessMemory) {
         this.maxRandomAccessMemory = maxRandomAccessMemory;
         return this;
@@ -42,7 +46,11 @@ public class SearchNotebook {
         return false;
     }
 
-    public List<Notebook> search (Collection<Notebook> notebooks){
-
+    public List<Notebook> search(Collection<Notebook> notebooks) {
+        return notebooks.stream().filter(notebook -> brand == null || notebook.getBrand().equals(brand))
+                .filter(notebook -> color == null || notebook.getColor().equals(color))
+                .filter(notebook -> rangeOf(notebook.getRandomAccessMemory(), minRandomAccessMemory, maxRandomAccessMemory))
+                .collect(Collectors.toList());
     }
+
 }
