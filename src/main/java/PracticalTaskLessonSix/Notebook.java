@@ -1,6 +1,7 @@
 package PracticalTaskLessonSix;
 
-import java.util.Objects;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Notebook {
     private String brand;
@@ -12,6 +13,7 @@ public class Notebook {
         this.color = color;
         this.randomAccessMemory = randomAccessMemory;
     }
+
 
     public String getBrand() {
         return brand;
@@ -59,4 +61,5 @@ public class Notebook {
     public int hashCode() {
         return Objects.hash(brand, color, randomAccessMemory);
     }
+
 }

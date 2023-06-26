@@ -1,56 +1,65 @@
 package PracticalTaskLessonSix;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class SearchNotebook {
-    private String brand;
-    private String color;
-    private Integer minRandomAccessMemory;
-    private Integer maxRandomAccessMemory;
 
-    public SearchNotebook setBrand(String brand) {
-        this.brand = brand;
-        return this;
-    }
-
-    public SearchNotebook setColor(String color) {
-        this.color = color;
-        return this;
-    }
-
-    public SearchNotebook setMinRandomAccessMemory(Integer minRandomAccessMemory) {
-        this.minRandomAccessMemory = minRandomAccessMemory;
-        return this;
-    }
-
-    public SearchNotebook setMaxRandomAccessMemory(Integer maxRandomAccessMemory) {
-        this.maxRandomAccessMemory = maxRandomAccessMemory;
-        return this;
-    }
-
-    private boolean rangeOf(Integer value, Integer min, Integer max) {
-        if (min == null && max == null) {
-            return true;
+    public List<Notebook> searchNotebookByBrand(List<Notebook> notebooks, String brand){
+        List<Notebook> result = new ArrayList<>();
+        for (Notebook elem: notebooks) {
+            if (elem.getBrand().equals(brand)){
+                result.add(elem);
+            }
         }
-        if (min != null && max == null && min <= value) {
-            return true;
-        }
-        if (max != null && min == null && max >= value) {
-            return true;
-        }
-        if (max != null && min != null && max >= value && min <= value) {
-            return true;
-        }
-        return false;
+        return result;
     }
 
-    public List<Notebook> search(Collection<Notebook> notebooks) {
-        return notebooks.stream().filter(notebook -> brand == null || notebook.getBrand().equals(brand))
-                .filter(notebook -> color == null || notebook.getColor().equals(color))
-                .filter(notebook -> rangeOf(notebook.getRandomAccessMemory(), minRandomAccessMemory, maxRandomAccessMemory))
-                .collect(Collectors.toList());
+    public List<Notebook> searchNotebookByColor(List<Notebook> notebooks, String color){
+        List<Notebook> result = new ArrayList<>();
+        for (Notebook elem: notebooks) {
+            if (elem.getColor().equals(color)){
+                result.add(elem);
+            }
+        }
+        return result;
+    }
+    public List<Notebook> searchNotebookByRAM(List<Notebook> notebooks, int randomAccessMemory){
+        List<Notebook> result = new ArrayList<>();
+        for (Notebook elem: notebooks) {
+            if (elem.getRandomAccessMemory() == randomAccessMemory){
+                result.add(elem);
+            }
+        }
+        return result;
+    }
+    public static String userRequest (String massage){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(massage);
+        return scanner.next();
+    }
+
+    public List<Notebook> search(List<Notebook> notebooks){
+        String request = userRequest("""
+                Выберите вариант поиска:
+                Brand - поиск по фирме производителю;
+                Color - поиск по цвету;
+                RAM - поиск по размеру оперативной памяти""");
+        if (request.equalsIgnoreCase("brand")){
+            List<Notebook> result = new ArrayList<>();
+            String brand = userRequest("Введите фирму производителя: ");
+            for (Notebook elem: notebooks) {
+                if (elem.getBrand().equals(brand)){
+                    result.add(elem);
+                }
+            }
+            return result;
+        } else {
+            return System.out.println("");
+        }
     }
 
 }
