@@ -57,9 +57,9 @@ public class SearchNotebook {
                 }
             }
             return result;
-        } else {
-            return System.out.println("");
+
         }
+        return notebooks;
     }
 
 }
