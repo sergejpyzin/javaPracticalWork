@@ -10,6 +10,12 @@ public class Main {
         notebooks.add(new Notebook("Intel", "Red", 16));
         notebooks.add(new Notebook("Athlon", "Grey", 8));
         notebooks.add(new Notebook("Dell", "Steel", 32));
+        notebooks.add(new Notebook("Intel", "Red", 16));
+        notebooks.add(new Notebook("Dell", "Steel", 8));
+        notebooks.add(new Notebook("Intel", "Grey", 8));
+        notebooks.add(new Notebook("Athlon", "Steel", 32));
+        notebooks.add(new Notebook("Intel", "Red", 16));
+        notebooks.add(new Notebook("Athlon", "Grey", 32));
 
         System.out.println(notebooks);
 
